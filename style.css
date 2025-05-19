@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: auto; /* or use a fixed height */
+  display: block;
+  object-fit: cover; /* use this if you set a height */
+}
+
+/* Optional: Fixed height banner with cropping */
+.banner {
+  height: 700px;
+  overflow: hidden;
+}
+
+.banner-text {
+  position: absolute;
+  font-family: "Manrope", sans-serif;
+  font-weight: lighter;
+  font-size: 3em;
+  text-shadow: 2px 4px 3px rgba(43, 61, 45, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ebe8deff;
+  text-align: center;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  background: rgba(43, 61, 45, 0.5);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #ebe8deff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: rgb(43, 61, 45);
+}
+
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.beige {
+  background-color: #ebe8deff;
+  font-family: "Manrope", sans-serif;
+  color: rgb(43, 61, 45);
+  padding: 50px;
+}
+
+.green {
+  background-color: rgb(43, 61, 45);
+  font-family: "Manrope", sans-serif;
+  color: #ebe8deff;
+  padding: 30px;
+}
+
+.image-row {
+  display: flex;
+  gap: 1rem; /* space between images */
+  justify-content: center; /* or use 'space-between' or 'left' */
+  align-items: center;
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding-left: 30px;
+  border-left: 4px solid #ebe8deff;
+  max-width: 600px;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #ebe8deff;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content {
+  background: #ebe8deff;
+  padding: 1rem;
+  border-radius: 6px;
+  position: relative;
+  margin-left: 10px;
+  color: rgb(43, 61, 45);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background: #ebe8deff;
+  border-radius: 50%;
+}
